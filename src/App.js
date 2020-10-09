@@ -7,9 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      {/* sidebar */}
       <Sidebar />
-      {/* chat */}
       <Chat />
     </div>
   );

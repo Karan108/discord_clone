@@ -1,9 +1,13 @@
 import React from 'react'
+import ChatHeader from '../chatheader/ChatHeader';
 import "./Chat.css";
+
 function Chat() {
     return (
         <div className='chat'>
-            <h2>I am chat</h2>
+            <div className="chat__header">
+                <ChatHeader />
+            </div>
         </div>
     )
 }
