@@ -1,0 +1,27 @@
+[debug] [2020-10-11T11:19:58.689Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T11:19:58.700Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-10-11T11:19:58.701Z] CLI Version:   8.7.0
+[debug] [2020-10-11T11:19:58.701Z] Platform:      win32
+[debug] [2020-10-11T11:19:58.701Z] Node Version:  v12.18.1
+[debug] [2020-10-11T11:19:58.752Z] Time:          Sun Oct 11 2020 16:49:58 GMT+0530 (India Standard Time)
+[debug] [2020-10-11T11:19:58.752Z] ----------------------------------------------------------------------
+[debug] [2020-10-11T11:19:58.752Z] 
+[debug] [2020-10-11T11:19:58.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-11T11:19:58.792Z] > authorizing via signed-in user
+[debug] [2020-10-11T11:19:58.793Z] [iam] checking project discord-clone-9ac13 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-11T11:19:58.801Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/discord-clone-9ac13:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-11T11:20:00.990Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Oct 2020 11:21:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1148","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-11T11:20:00.996Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/discord-clone-9ac13  
+ 
+[debug] [2020-10-11T11:20:01.602Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 11 Oct 2020 11:21:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'discord-clone-9ac13'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-11T11:20:01.610Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/discord-clone-9ac13/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-11T11:20:17.200Z] Error: read ECONNRESET
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27)
+[error] 
+[error] Error: Server Error. read ECONNRESET

@@ -87,3 +87,7 @@
 .sidebar__profileIcons>.MuiSvgIcon-root {
     /* padding: 10px !important; */
 }
+
+.sidebar__channels {
+    overflow: scroll;
+}
